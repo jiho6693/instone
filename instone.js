@@ -23,12 +23,12 @@ import { GLTFLoader } from 'GLTFLoader';
       controls.update();
 
       const skyMaterialArray = []
-      const texture_ft = new THREE.TextureLoader().load('../ex-12/bay_ft.jpg')
-      const texture_bk = new THREE.TextureLoader().load('../ex-12/bay_bk.jpg')
-      const texture_up = new THREE.TextureLoader().load('../ex-12/bay_up.jpg')
-      const texture_dn = new THREE.TextureLoader().load('../ex-12/bay_dn.jpg')
-      const texture_rt = new THREE.TextureLoader().load('../ex-12/bay_rt.jpg')
-      const texture_lf = new THREE.TextureLoader().load('../ex-12/bay_lf.jpg')
+      const texture_ft = new THREE.TextureLoader().load('./bay_ft.jpg')
+      const texture_bk = new THREE.TextureLoader().load('./bay_bk.jpg')
+      const texture_up = new THREE.TextureLoader().load('./bay_up.jpg')
+      const texture_dn = new THREE.TextureLoader().load('./bay_dn.jpg')
+      const texture_rt = new THREE.TextureLoader().load('./bay_rt.jpg')
+      const texture_lf = new THREE.TextureLoader().load('./bay_lf.jpg')
 
       skyMaterialArray.push(
         new THREE.MeshStandardMaterial({
@@ -87,7 +87,7 @@ const loader01 = new GLTFLoader();
 // // load a resource
 loader01.load(
 	// resource URL
-	'source/Rock1.glb',
+	'./Rock1.glb',
 	// called when the resource is loaded
 	function ( gltf ) {
     
